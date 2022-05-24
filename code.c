@@ -45,11 +45,59 @@ int main(void){
 						break;
 
 					case 'B':
-					    break;
+						while(1){
+							LCD4bits_Clear();
+							LCD_WriteString("Beef Weight?");
+							if (checker()){
+								char weight = keypad_scan(0);
+								if(weight){
+									char weightInt = weight - 48;
+									if(beef(time, weightInt)){
+										LCD4bits_Clear();
+										LCD_WriteString("Err");
+										delay1s(0);
+										delay1s(0);
+									} //LCDPreview("Invalid Input");
+									else{
+										LCD4bits_Clear();
+										LCD4bits_Data(weight);
+										waitforstart(time);
+										break;
+									}
+								}else{
+									break;
+								}
+							}
+            }
+					break;
 
 
 					case 'C':
-					    break;
+						while(1){
+							LCD4bits_Clear();
+							LCD_WriteString("Chicken Weight?");
+							if (checker()){
+								char weight = keypad_scan(0);
+								if(weight){
+									char weightInt = weight - 48;
+									if(chicken(time, weightInt)){
+										LCD4bits_Clear();
+										LCD_WriteString("Err");
+										delay1s(0);
+										delay1s(0);
+									} //LCDPreview("Invalid Input");
+									else{
+										LCD4bits_Clear();
+										LCD4bits_Data(weight);
+										waitforstart(time);
+										break;
+									}
+								}else{
+									break;
+								}
+							}
+            }
+					break;
 
 					case 'D':
 				}
