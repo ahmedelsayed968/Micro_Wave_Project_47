@@ -423,17 +423,17 @@
             <File>
               <FileName>keypad.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Report 4\keypad.c</FilePath>
+              <FilePath>.\keypad.c</FilePath>
             </File>
             <File>
               <FileName>buttons.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Report 4\buttons.c</FilePath>
+              <FilePath>.\buttons.c</FilePath>
             </File>
             <File>
               <FileName>LCD.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Report 4\LCD.c</FilePath>
+              <FilePath>.\LCD.c</FilePath>
             </File>
           </Files>
         </Group>
